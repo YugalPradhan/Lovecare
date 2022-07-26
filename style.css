@@ -72,6 +72,9 @@ form div h1 {
     font-size: 2rem;
     font-family: "Patrick Hand", cursive;
 }
+form div input {
+    color:black;
+}
 
 #p1 {
     font-size: 22px;
@@ -108,13 +111,11 @@ form div h1 {
     /* justify-content: center; */
     align-items: center;
     display: flex;
-    width:100%;
 }
 
 form {
     position: relative;
     margin: 3rem;
-    width: 30%;
     /* border: 2px solid green; */
     background-color: rgb(57 46 35);
     padding: 3rem;
@@ -217,7 +218,7 @@ button:hover {
     font-weight: bold;
 }
 
-input[type="text"] {
+input[name="myname"] {
     height: 30px;
     width: 100%;
 }
@@ -323,29 +324,46 @@ img {
     #s2 {
         flex-direction: column;
     }
-
-    .content {
-        width: 65%;
-    }
-
-    form {
-        width: 70%;
-    }
     .box2{
         width:80%;
+    }
+    .content{
+        width: 80%;
+        padding: 0px;
+        margin-top: 2rem;
     }
     #Contact{
         flex-direction: column;
         align-items: center;
     }
-
 }
-
+@media only screen and (max-width:525px){
+    #boxa{
+        justify-content: space-around;
+    }
+    #p2{
+        font-size: 3.5rem;
+    }
+    .content h1{
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width:450px){
+    form{
+        margin:2rem 1rem;
+    }
+}
 @media only screen and (max-width:391px) {
     .list {
         margin: 4px 2px;
         padding: 5px 8px;
     }
-
+    .content{
+        padding: 1rem;
+    }
+    form{
+        padding:1rem;
+        margin: 2rem 0px;
+    }
 }
 
