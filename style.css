@@ -33,16 +33,20 @@ ul::before {
 
 ul {
     display: flex;
+    background-color: rgb(2, 36, 51);
+    justify-content: right;
+   
 }
 
 .list {
     list-style: none;
-    margin: 5px 4.1px;
+    margin: 5px 55.1px;
     padding: 5px 20px;
 }
 
 .list a {
     text-decoration: none;
+    color: white;
 }
 
 #home {
@@ -98,9 +102,11 @@ form div input {
 }
 
 .list:hover {
-    color: purple;
+    
     background-color: rgb(53, 13, 53);
+    background-color: rgb(33, 210, 210);
     border-radius: 10px;
+    color: rgb(0, 49, 128);
     cursor: pointer;
 }
 
@@ -367,3 +373,18 @@ img {
     }
 }
 
+
+@media only screen and (max-width:1012px) {
+    .list {
+        margin: 4px 2px;
+        padding: 5px 8px;
+    }
+
+    #p2 {
+        font-size: 2rem;
+    }
+
+    li .heading {
+        visibility: hidden;
+    }
+}
