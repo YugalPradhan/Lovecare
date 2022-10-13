@@ -13,15 +13,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav id="s">
-        <header>
-            <ul>
+    <div class="container">
+        <nav id="s">
+        <nav class="navbar">
                 <li class="list"><a href="#s">Home</a></li>
                 <li class="list"><a href="#s2">About</a></li>
                 <li class="list"><a href="#donate">Donate</a></li>
                 <li class="list"><a href="#Contact">Contact Us</a></li>
-            </ul>
-        </header>
     </nav>
     <div class="logo">
         <div id="lovecare">
@@ -155,8 +153,17 @@
         </div>
     </section>
     <section id="copy">
-        Copyright ©2022 All rights reserved | This template is made by Yugal Pradhan
+        Copyright ©2022 All rights reserved
     </section>
+
+    </div>
+    
+    <script>
+        var navbar = document.querySelector(".navbar")
+        window.onscroll = () => {
+            this.scrollY > 0 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky")
+        }
+    </script>
 </body>
 
 </html>
